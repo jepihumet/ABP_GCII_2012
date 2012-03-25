@@ -36,7 +36,7 @@
        </size>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color:#7F43DE;</string>
+       <string notr="true">background-color:#00EE00;</string>
       </property>
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
@@ -73,7 +73,7 @@
      <x>0</x>
      <y>0</y>
      <width>730</width>
-     <height>21</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>
