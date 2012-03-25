@@ -37,6 +37,7 @@ HEADERS  += uigc2.h \
 FORMS    += uigc2.ui
 
 win32: LIBS += "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\lib\glew32.lib"
+unix: LIBS += -lGLEW
 
 OTHER_FILES += \
     simple.vert \
