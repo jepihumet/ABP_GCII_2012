@@ -18,6 +18,20 @@
 #include "Model.h"
 #include "Util.h"
 
+//////////////////////////// GLC specific///////////////////////////////////////
+// The factory
+#include <GLC_Factory>
+// Light
+#include <GLC_Light>
+// Material
+#include <GLC_Material>
+// The Viewport with a default camera
+#include <GLC_Viewport>
+// The World which manage GLC_object
+#include <GLC_World>
+// The Mover controller is used to change the point of view
+#include <GLC_MoverController>
+
 
 class GLWidget : public QGLWidget {
 
@@ -39,6 +53,10 @@ protected:
 
 private:
     QGLShaderProgram m_shader;
+    GLC_Light m_Light;
+    GLC_World m_World;
+    GLC_Viewport m_GlView;
+    GLC_MoverController m_MoverController;
 };
 
 #endif  /* _GLWIDGET_H */

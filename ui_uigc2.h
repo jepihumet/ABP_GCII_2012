@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'uigc2.ui'
 **
-** Created: Thu 15. Mar 20:26:04 2012
+** Created: Wed 28. Mar 13:20:14 2012
 **      by: Qt User Interface Compiler version 4.8.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -74,7 +74,7 @@ public:
         frame->setObjectName(QString::fromUtf8("frame"));
         frame->setMinimumSize(QSize(200, 0));
         frame->setMaximumSize(QSize(200, 16777215));
-        frame->setStyleSheet(QString::fromUtf8("background-color:#7F43DE;"));
+        frame->setStyleSheet(QString::fromUtf8("background-color:#00EE00;"));
         frame->setFrameShape(QFrame::StyledPanel);
         frame->setFrameShadow(QFrame::Raised);
 
@@ -95,7 +95,7 @@ public:
         UIGC2->setStatusBar(statusBar);
         menuBar = new QMenuBar(UIGC2);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 730, 21));
+        menuBar->setGeometry(QRect(0, 0, 730, 22));
         UIGC2->setMenuBar(menuBar);
 
         retranslateUi(UIGC2);

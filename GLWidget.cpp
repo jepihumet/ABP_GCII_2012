@@ -1,4 +1,7 @@
 #include <QtGui/QMouseEvent>
+
+#include <GLC_UserInput>
+
 #include "GLWidget.h"
 
 GLWidget::GLWidget(QWidget *parent) : QGLWidget(parent) {
@@ -75,6 +78,11 @@ void GLWidget::paintGL() {
     gluPerspective(30.0, 1.0, 5.0, 500.0);
 
     //Dibuixos
+    QFile manFile(":man.obj");
+    GLC_World* pWorld= m_pFactory->createWorld(manFile);
+
+    m_World= (*pWorld);
+    delete pWorld;
 
     glFlush();
 }
